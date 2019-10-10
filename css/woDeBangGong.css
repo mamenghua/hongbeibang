@@ -1,0 +1,168 @@
+html {
+	font-size: 26.6666vw;
+
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.head {
+	width: 3.75rem;
+	height: 0.38rem;
+	font-size: 0.16rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.12rem;
+	box-sizing: border-box;
+}
+
+.head .icon-zuo {
+	font-size: 0.16rem;
+	line-height: 0.38rem;
+}
+
+.head p:nth-child(2) {
+	display: inline-block;
+	line-height: 0.38rem;
+	font-weight: 600;
+}
+
+.head p:nth-child(3) {
+	font-weight: 500;
+	display: inline-block;
+}
+
+.head p a {
+	font-size: 0.14rem;
+	color: #666666;
+}
+
+/* 内容区 */
+#content {
+	flex: 1;
+	overflow-y: auto;
+	/* overflow-x: hidden; */
+	padding: 0 0.12rem;
+	box-sizing: border-box;
+	font-size: 0.16rem;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	text-indent: 0.12rem;
+	margin-top: 0.21rem;
+}
+
+/* 可用帮贡 */
+.kybg {
+	height: 1.57rem;
+	background: #F9937B;
+	color:#fff;
+	text-align: center;
+}
+.kybg h2{
+	margin-top: 0.2rem;
+	font-weight: 500;
+	font-size:0.3rem;
+}
+.kybg p{
+	margin-top: 0.2rem;
+}
+.kybg a{
+	display: block;
+	width: 1.3rem;
+	height:0.35rem;
+	background:#FFFFFF;
+	box-shadow: 0.1rem;
+	border-radius: 0.35rem;
+	text-align: center;
+	line-height: 0.34rem;
+	margin:0.13rem auto;
+	color: #E8876D;
+}
+
+/* FAQ */
+.faq {
+	height: 1.57rem;
+	margin-top:0.1rem;
+	text-indent: 0;
+}
+
+.faq h2 {
+	margin-top:0.2rem;
+	font-size: 0.16rem;
+	color: #333;
+	line-height: 0.22rem;
+}
+
+.faq p {
+	font-size: 0.12rem;
+	color: #666;
+	line-height: 0.16rem;
+	
+}
+
+
+
+
+/* 帮贡明细 兑换明细 */
+.mingxi {
+	height: 2.6rem;
+}
+.mingxiT {
+	width: 1.87rem;
+	height: 0.57rem;
+	margin: 0 auto;
+}
+
+.mingxiT p {
+	display: inline-block;
+	font-size: 0.16rem;
+	color: #333;
+	line-height: 0.56rem;
+	position: relative;
+}
+
+/* 公共的span 下边那条横杠 */
+.current {
+	position: absolute;
+	bottom: 0.1rem;
+	left: 0.12rem;
+	display: inline-block;
+	width: 0.65rem;
+	height: 0.04rem;
+	background-color: #E8876D;
+}
+
+
+
+.mingxiB {
+	width: 100%;
+	height: 1.79rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.mingxiB-l h2{
+	font-size: 0.14rem;
+	color: #666;
+	line-height: 0.2rem;
+}
+.mingxiB-l p{
+	font-size: 0.14rem;
+	color: #8A8A8A;
+	line-height: 0.2rem;
+}
+.mingxiB-r i{
+	font-size: 0.16rem;
+	color: #EB9B86;
+	line-height: 0.22rem;
+}

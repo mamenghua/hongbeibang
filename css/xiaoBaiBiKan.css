@@ -1,0 +1,15 @@
+
+/* header */
+#header{font-size: 0.2rem;line-height: 0.36rem;
+	padding: 0 0.12rem;}
+#header i{font-size: 0.2rem;margin: 0 0.02rem;}
+#header a{color: #000000;}
+#header a:last-child{font-size: 0.16rem;color: #E8876D;
+	padding: 0 0.16rem;line-height: 0.24rem;
+	border: 1px solid #E8876D;border-radius: 0.1rem;
+	margin-top: 0.06rem;}
+#content .xiaobai{padding: 0 0.15rem 0 0.12rem;}
+#content .xiaobai .title{padding: 0.1rem 0rem;}
+#content .xiaobai p{font-size: 0.12rem;color: #333333;
+	margin-bottom: 0.16rem;}
+#content .xiaobai p a{color: #E8876D;}

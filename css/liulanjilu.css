@@ -1,0 +1,20 @@
+
+#head{width: 3.75rem;height: 0.54rem;padding-top: 0.1rem;box-sizing: border-box;
+	justify-content: initial;}
+#head span{font-size: 0.15rem;color: #333333;margin-left: 0.12rem;}
+#head i{font-style: normal;font-size: 0.16rem;font-weight: 600;line-height: 0.22rem;margin-left: 1.12rem;color: #333333;letter-spacing: 0.02rem;}
+
+/* indexLists */
+.indexLists{padding: 0 0.12rem;}
+.indexLists li{padding: 0.12rem 0;
+	border-bottom: 0.02rem solid #f3f3f3;}
+.indexLists .listsR{width: 1.85rem;margin-left: 0.1rem;
+	display: inline-block;vertical-align: middle;}
+.indexLists li img{width: 1.16rem;height: 0.72rem;
+	vertical-align: middle;}
+.indexLists li a{color: #333333;display: inline-block;}
+.indexLists li .tit{font-size: 0.16rem;line-height: 0.22rem;}
+.indexLists li .author{font-size: 0.12rem;color: #666666;
+	line-height: 0.16rem;opacity: 0.5;}
+.indexLists li .num{font-size: 0.12rem;color: #666666;
+	line-height: 0.16rem;}

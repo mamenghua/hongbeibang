@@ -1,0 +1,40 @@
+/* header */
+#header{font-size: 0.2rem;line-height: 0.36rem;
+	padding: 0 0.12rem;}
+#header i{font-size: 0.2rem;margin: 0 0.02rem;}
+#header a{color: #000000;}
+#header a:last-child{font-size: 0.16rem;color: #E8876D;
+	padding: 0 0.16rem;line-height: 0.24rem;
+	border: 1px solid #E8876D;border-radius: 0.1rem;
+	margin-top: 0.06rem;}
+
+/* content */
+#content{padding: 0.12rem;}
+/* xiaoBaiImage */
+.xiaoBaiImage{width: 3.5rem;height: 2.2rem;margin: 0 auto;}
+.xiaoBaiImage img{width: 3.5rem;height: 2.2rem;vertical-align: middle;}
+/* title time */
+#content .title{font-size: 0.16rem;padding: 0.16rem 0 0.04rem;}
+#content .time{font-size: 0.12rem;color: #666666;
+	line-height: 0.16rem;}
+/* desc */
+#content .desc{font-size: 0.12rem;color: #333333;
+	margin: 0.1rem 0;}
+/* shiCaiLists */
+#content .shiCaiLists{font-size: 0.1rem;color: #999999;}
+#content .shiCaiLists span{width: 49%;display: inline-block;}
+/* middleArea */
+.middleArea .touxiang{width: 0.28rem;height: 0.28rem;
+	vertical-align: middle;border-radius: 50%;}
+.middleArea .author{font-size: 0.14rem;color: #333333;
+	margin-left: 0.1rem;}
+.middleArea .follow{border: 1px solid #F9937B;
+	font-size: 0.14rem;color: #F9937B;
+	padding: 0 0.1rem;}
+/* footer */
+#footer{font-size: 0.2rem;line-height: 0.6rem;
+	padding: 0 0.12rem;}
+#footer i{font-size: 0.14rem;}
+#footer a{color: #666666;margin-right: 0.08rem;}
+#footer a:last-child{color: #000000;}
+#footer a:last-child i{font-size: 0.18rem;}

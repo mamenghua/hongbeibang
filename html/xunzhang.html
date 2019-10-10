@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xunzhang.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$.post("http://47.240.68.134:8889/backinghelper/user/findMyMedals.do",{
+						"token":$.cookie("token")
+					},function(data){
+						console.log(data);
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<header class="head">
+			<a href="shezhi.html"><span class="iconfont icon-zuo"></span></a>
+			<i>我的勋章</i>
+		</header>
+		
+		<section class="content">
+			<ul class="nav1">
+				<li><a href="#"><i>日常勋章  （以获得0枚）</i></a></li>
+				<li><a href="#"><i>特殊勋章  （以获得0枚）</i></a></li>
+			</ul>
+			<ul class="nav2">
+				<li><a href="#"><i>成就勋章  （以获得0枚）</i></a></li>
+			</ul>
+			<div class="blank">
+				<img src="../img/xunzhang.png" >
+			</div>
+		</section>
+	</body>
+</html>

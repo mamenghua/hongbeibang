@@ -1,0 +1,26 @@
+/* header */
+#header{font-size: 0.2rem;line-height: 0.56rem;
+	padding: 0 0.12rem;}
+#header i{font-size: 0.26rem;}
+#header a{color: #333333;}
+
+/* content */
+#content{position: relative;}
+#content .twoBoxs{position: absolute;left: 0;bottom: 0;width: 100%;}
+.faBuBox{display: inline-block;width: 49%;text-align: center;}
+.faBuBox .imgArea{height: 1.6rem;}
+.faBuBox .imgArea span{vertical-align: middle;display: inline-block;height: 100%;}
+.faBuBox .imgArea img{vertical-align: middle;}
+.faBuBox p{font-size: 0.12rem;color: #333333;
+	font-weight: 600;margin-bottom: 0.4rem;}
+
+/*
+flex-direction: column;
+	justify-content: center;align-items: center;
+	color:rgba(151,151,151,1);height: 100%;
+*/
+/* footer */
+#footer{font-size: 0.16rem;text-align: center;}
+#footer .draft{background: #E98B71;display: inline-block;
+	width: 100%;height: 0.46rem;line-height: 0.46rem;
+	font-size: 0.14rem;color: #ffffff;}

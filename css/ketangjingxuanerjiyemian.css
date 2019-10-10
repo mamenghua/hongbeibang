@@ -1,0 +1,49 @@
+html{font-size:26.6666vw;}
+html,body{height: 100%;}
+body{display: flex;flex-direction: column;}
+#content{flex: 1;overflow-y: auto;}
+#header{font-size: 0.2rem;line-height: 0.36rem;
+	padding: 0 0.12rem;}
+#header i{font-size: 0.2rem;margin: 0 0.02rem;}
+#header a{color: #000000;}
+#header a:last-child{font-size: 0.16rem;color: #E8876D;
+	padding: 0 0.16rem;line-height: 0.24rem;
+	border: 1px solid #E8876D;border-radius: 0.1rem;
+	margin-top: 0.06rem;}
+.zuo{margin-right: 0.14rem;}
+.fr{margin-left: 1.4rem;}
+
+.top{width: 3.75rem;height: 2.5rem;border-bottom: solid 0.1rem rgba(216,216,216,0.3);}
+.top video{width: 3.75rem;height: 1.5rem;background: #000000;}
+.top h5{font-size: 0.16rem;color: #333333;font-weight: 600;line-height: 0.24rem;padding: 0 0.12rem;}
+.top p{padding: 0.1rem 0.12rem;}
+.top p span{font-size: 0.17rem;color: #333333;}
+.top p i{color: #F9A18C;font-size: 0.12rem;font-style: normal;line-height: 0.17rem;}
+.top p strong{font-style: normal;font-weight: normal;font-size: 0.12rem;color: #666666;line-height: 0.17rem;}
+.top p .icon-icon-1{margin-left: 2.3rem;}
+
+.middle{width: 3.75rem;height: 0.62rem;border-bottom: solid 0.1rem rgba(216,216,216,0.3);position: relative;}
+.middle p{color: #666666;line-height: 0.28rem;font-size: 0.12rem;font-weight: 600;text-indent: 0.12rem;}	
+.middle a{position: absolute;top: 0.16rem;left: 3.33rem;font-size: 0.15rem;}
+
+.bottom{padding: 0.2rem 0.12rem;box-sizing: border-box;}
+.bottom h6 span:nth-of-type(1){font-size: 0.16rem;font-weight: 600;color: #333333;}
+.bottom h6 span:nth-of-type(2){font-size: 0.14rem;font-weight: 600;color: #666666;margin-left: 2.2rem;}
+
+.lists dl{width: 1.12rem;height: 1.6rem;margin-top: 0.1rem;float: left;margin-right: 0.05rem;}
+.lists dl dt img{width: 1.12rem;height: 1.2rem;background: #0077AA;}
+.lists dl dd span{display: inline-block;width: 0.22rem;height: 0.22rem;border-radius: 50%;background: pink;vertical-align: middle;}
+.lists dl dd span img{width: 0.22rem;height: 0.22rem;border-radius: 50%;}
+.lists dl dd i{font-size: 0.12rem;color: #666666;font-weight: 600;font-style: normal;display: inline-block;vertical-align: middle;}
+.lists dl dd{text-align: center;line-height: 0.32rem;}
+
+#foot{width: 3.75rem;height: 0.48rem;}
+.kefu{float: left;text-align: center;margin-left: 0.3rem;}
+.kefu h2{margin-top: 0.08rem;}
+.kefu h2 span{font-size: 0.2rem;color: #333333;}
+.kefu i{font-size: 0.1rem;color: #666666;font-style: normal;}
+.shikan{float: left;text-align: center;margin-left: 0.6rem;}
+.shikan h2{margin-top: 0.08rem;}
+.shikan h2 span{font-size: 0.2rem;color: #333333;}
+.shikan i{font-size: 0.1rem;color: #666666;font-style: normal;}
+.goumai{float: left;width: 2rem;height: 0.48rem;background:#E8876D ;text-align: center;line-height: 0.48rem;font-size: 0.2rem;color: white;margin-left: 0.37rem;}

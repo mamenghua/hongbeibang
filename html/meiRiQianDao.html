@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>每日签到</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/meiRiQianDao.css" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				// 返回按钮
+				$returnBtn = $("#returnBtn");
+				// 返回按钮注册点击事件
+				$returnBtn.on("click",function(){
+					history.back();		
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="head_l">
+				<p id="returnBtn" class="iconfont icon-zuo"></p>
+				<p class="dianji">每日签到<span class="current"></span></p>
+				<p>福利活动<span></span></p>
+			</div>
+		</header>
+		<!-- 内容区 -->
+		<section id="content">
+			<!-- 点击签到出来的信息 点击福利活动要隐藏的部分 -->
+			<div class="section1">
+				<div class="dianji qiandao">
+					<div class="qiandao-l">
+						<img src="../img/1.png" alt="">
+						<h2>您已经连续签到<span>99</span>天<p>超过了<span>55%</span>帮友</p>
+						</h2> 
+				
+					</div>
+					<div class="qiandao-r">
+						<a href="woDeRenWu.html">签到</a>
+					</div>
+				</div>
+				<div id="zhuanpan" class="zhuanpan">
+					<img src="../img/xingyun.png" alt="">
+					<img id="zhuanpanImg" src="../img/panpan.png" class="rotate" />
+					<img src="../img/qidong.png" />
+					<div id="firing" class="firing"></div>
+				</div>
+				<div class="cishu">
+					<p>15帮贡1次，剩余3次</p>
+					<a href="">帮贡有什么用？</a>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<!-- 内容区下边图片文字和时间部分 -->
+		<div class="section2 yincang">
+			<ul class="contList">
+				<!-- <li>
+					<a href=""><img src="../img/zqmw.png" alt=""></a>
+					<p>【结束】烘焙之星高“甜”时刻</p><i>8-07截止</i>
+				</li>
+				<li>
+					<a href=""><img src="../img/zqmw.png" alt=""></a>
+					<p>【结束】烘焙之星高“甜”时刻</p><i>8-07截止</i>
+				</li>
+				<li>
+					<a href=""><img src="../img/zqmw.png" alt=""></a>
+					<p>【结束】烘焙之星高“甜”时刻</p><i>8-07截止</i>
+				</li>
+				<li>
+					<a href=""><img src="../img/zqmw.png" alt=""></a>
+					<p>【结束】烘焙之星高“甜”时刻</p><i>8-07截止</i>
+				</li> -->
+			</ul>
+		</div>
+			
+		</section>
+		<script type="text/javascript">
+			$(function() {
+				
+				$contL = document.getElementsByClassName("contList")[0];
+				// $contL.eq(0).fadeIn().nextAll().fadeOut();
+				var str = "";
+				$.ajax({
+					type: "get",
+					url: "https://www.fastmock.site/mock/ed88bdd26c3e496c2fb458dc4eb2a2ed/api/fuLiHuoDong",
+					success:function(data){
+//						console.log(data);
+						for(var i in data.fuLHuoDong){
+//							console.log(data.fuLHuoDong);
+							str +=
+								`
+									<li>
+										<a href="#"><img src="${data.fuLHuoDong[i].banner}" alt=""></a>
+										<p>${data.fuLHuoDong[i].wenben}</p>
+										<i>${data.fuLHuoDong[i].shijian}</i>
+									</li>
+								`;
+							
+						};
+//						console.log(str,$contL);
+						$contL.innerHTML = str;
+					}
+				});
+				
+				//console.log($('.head_l').find('p').eq(1));
+				$('.head_l').find('p').eq(1).click(function(){
+					//console.log("aa")
+					$(this).find('span').addClass('current');
+					$('.head_l').find('p').eq(2).find('span').removeClass('current');
+					$('.section1').removeClass('yincang');
+					$('.section2').addClass('yincang');
+				});
+				
+				$('.head_l').find('p').eq(2).click(function(){
+					console.log("bb")
+					$(this).find('span').addClass('current');
+					$('.head_l').find('p').eq(1).find('span').removeClass('current');
+					$('.section2').removeClass('yincang');
+					$('.section1').addClass('yincang');
+				});
+				
+				
+				
+				
+				
+				// 得到旋转图片
+				$xuanzhuan = $("#zhuanpanImg").eq(0);
+				// 得到点击框，注册点击事件
+				$firing = $("#firing");
+				var number = 0;
+				$firing.on("click", function() {
+					number += Math.floor(Math.random() * 30);
+					$xuanzhuan.css({
+						"transform": "rotate(" + number * 40 + "deg)"
+					});
+					setTimeout(function() {
+						switch (number % 9) {
+							case 0:
+								alert("头等奖 +5000金币");
+								break;
+							case 1:
+								alert("好可惜啊");
+								break;
+							case 2:
+								alert("关注2次 +20帮贡");
+								break;
+							case 3:
+								alert("二等奖 +1000金币");
+								break;
+							case 4:
+								alert("分享2次 +30帮贡");
+								break;
+							case 5:
+								alert("点赞10次 +25帮贡");
+								break;
+							case 6:
+								alert("三等奖 +88金币");
+								break;
+							case 7:
+								alert("传作品1次 +50帮贡");
+								break;
+							case 8:
+								alert("打赏5次 +25帮贡");
+								break;
+						}
+					}, 5000);
+
+					$xuanzhuan.css({
+						"transform": "rotate(" + number * 40 + "deg)"
+					})
+
+				});
+			
+			});
+		</script>
+		
+		
+	</body>
+</html>

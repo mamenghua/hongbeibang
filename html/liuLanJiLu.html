@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/liulanjilu.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				// 返回按钮
+				$returnBtn = $("#returnBtn");
+				// 返回按钮注册点击事件
+				$returnBtn.on("click",function(){
+					history.back();		
+				});
+				var xuetangLists = document.getElementById("liuLanLists");
+				var str = "";
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/ed88bdd26c3e496c2fb458dc4eb2a2ed/api/lists",
+					success:function(data) {
+						for(var i in data.list) {
+						str += `
+									<li>
+										<a href="#">
+											<img src = ${data.list[i].image}>
+											<div class="listsR">
+												<h4 class="tit">${data.list[i].title}</h4>
+												<span class="author">${data.list[i].author}</span>
+												<p class="num">${data.list[i].number1}人收藏  ${data.list[i].number2}人做过</p>
+											</div>
+										</a>
+									</li>
+									`;
+						}
+						xuetangLists.innerHTML = str;
+					}
+					
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<header id="head">
+			<span id="returnBtn" class="iconfont icon-zuo"></span>
+			<i>我的浏览记录</i>
+		</header>
+		<section id="content">
+			<ul id="liuLanLists" class="indexLists">
+					
+			</ul>
+		</section>
+	</body>
+</html>

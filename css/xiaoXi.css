@@ -1,0 +1,82 @@
+html {
+	font-size: 26.6666vw;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.head_l {
+	width: 3.75rem;
+	height: 0.38rem;
+	/* background: rgba(255, 255, 255, 1); */
+	font-size: 0.16rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 0.12rem;
+	box-sizing: border-box;
+}
+.head_l .icon-zuo{
+	font-size: 0.16rem;
+	line-height: 0.38rem;
+}
+
+.head_l p:nth-child(2) {
+	display: inline-block;
+	line-height: 0.38rem;
+}
+
+.head_l p:nth-child(3) {
+	display: inline-block;
+}
+.head_l p a{font-size: 0.14rem;color: #666666;}
+#content {
+	width: 100%;
+	flex: 1;
+	overflow-y: auto;
+	padding: 0.12rem;
+	box-sizing: border-box;
+	font-size: 0.16rem;
+	color:#333;
+	display: flex;
+	/* justify-content: space-between;*/
+	flex-direction: column; 
+	text-indent: 0.12rem;
+}
+
+.ggneirong{
+	display: flex;
+	justify-content: space-between;
+	height: 0.5rem;
+	margin-top: 0.3rem;
+}
+.ggneirong-l{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.ggneirong-l p{
+	font-size: 0.16rem;
+	line-height: 0.22rem;
+	color:#333;
+}
+.ggneirong-l span a{
+	font-size: 0.12rem;
+	line-height: 0.16rem;
+	color:#666;
+}
+.ggneirong-r p{
+	font-size: 0.12rem;
+	line-height: 0.16rem;
+	color:#666;
+}

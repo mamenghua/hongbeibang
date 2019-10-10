@@ -1,0 +1,28 @@
+#header{font-size: 0.14rem;}
+/* header_top */
+.header_top{height: 0.36rem;padding: 0 0.12rem;display: flex;
+	justify-content: space-between;align-items: center;}
+.header_top .icon-zuo{font-size: 0.2rem;color: #333333;}
+.header_top .question{color: #E8876D;}
+
+/* head_lists */
+.head_lists{display: flex;
+	font-size: 0.12rem;}
+.head_lists li{flex: 1;text-align: center;}
+.head_lists li a{color: #333333;}
+.head_lists .current{font-weight: bold;}
+.head_lists .current::after{
+	content: '';
+	display: inline-block;
+	width: 0.48rem;height: 0.04rem;
+	background-color: #E8876D;}
+
+/* baiKeLists */
+.baiKeLists{padding: 0 0.12rem;}
+.baiKeLists li{padding: 0.12rem 0;
+	border-bottom: 0.02rem solid #f3f3f3;}
+.baiKeLists li img{width: 1.16rem;height: 0.68rem;
+	vertical-align: middle;}
+.baiKeLists li a{color: #333333;display: inline-block;}
+.baiKeLists li a .tit{width: 1.85rem;margin-left: 0.1rem;
+	display: inline-block;vertical-align: middle;}

@@ -1,0 +1,167 @@
+html {
+	font-size: 26.6666vw;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 左浮动右浮动 */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/* head */
+#head {
+	height: 0.26rem;
+	padding: 0.12rem;
+	font-size: 0.20rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#head>a i {
+	font-size: 0.2rem;
+	color: #333333;
+	margin: 0 0.1rem;
+}
+
+.searchArea {
+	width: 2.68rem;
+	height: 0.26rem;
+	line-height: 0.22rem;
+	background: rgba(240, 240, 239, 1);
+	border-radius: 0.16rem;
+	box-sizing: border-box;
+	padding: 0 0.2rem;
+}
+
+.searchArea i {
+	font-size: 0.12rem;
+	vertical-align: middle;
+	color: rgba(153, 153, 153, 1);
+}
+
+.searchArea input {
+	vertical-align: middle;
+	width: 90%;
+	line-height: 0.12rem;
+	font-size: 0.1rem;
+	border: 0;
+	background: rgba(240, 240, 239, 1);
+	color: #757575;
+}
+
+
+/* content */
+/* 主要内容区 */
+#content {
+	flex: 1;
+	overflow-y: auto;
+	font-size: 0.16rem;
+	width: 100%;
+	position: relative;
+}
+
+/* 内容区左边部分 */
+
+.cont-l {
+	width: 0.97rem;
+	display: flex;
+	flex-direction: column;
+	background: #F5F7F9;
+	float: left;
+	text-align: center;
+}
+
+
+.zbbj {
+	height: 0.5rem;
+	position: relative;
+	line-height: 0.5rem;
+}
+
+.bianbeijing {
+	background: #fff;
+	border-left:0.03rem solid #E8876D;
+}
+
+/* .cont-l span {
+	display: inline-block;
+	background: #E8876D;
+	width: 0.04rem;
+	height: 0.3rem;
+	margin-left: 0.12rem;
+	position: absolute;
+	left: 0;
+	top: 0.15rem;
+
+} */
+
+.cont-l div a {
+	color: #333;
+	line-height: 0.5rem;
+	text-align: center;
+	
+}
+
+
+
+
+/* 内容区右边部分 */
+.cont-r {
+	
+	width: 2.78rem;
+	position: absolute;
+	/* z-index: 1; */
+	top: 0;
+	bottom: 0;
+	right: 0;
+	/* left: 22.67%; */
+	left: 0.97rem;
+	margin: 0;
+	overflow: scroll;
+	float: left;
+}
+
+.cont-r1 {
+	background: #fff;
+}
+
+.cont-r h2 {
+	font-size: 0.16rem;
+	color: #333;
+	text-indent: 0.12rem;
+	line-height: 0.22rem;
+}
+
+.cont-rt {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 0.16rem;
+	color: #333;
+	line-height: 0.22rem;
+	margin-top:0.09rem;
+}
+
+.cont-rt img {
+	width: 0.78rem;
+	height: 0.78rem;
+	margin-left: 0.1rem;
+}
+
+.cont-rt dd a {
+	color: #333;
+}

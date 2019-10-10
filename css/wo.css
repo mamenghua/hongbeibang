@@ -1,0 +1,43 @@
+a:nth-of-type(2){font-size: 0.16rem;
+font-family:PingFang SC;
+font-weight:400;
+line-height:0.22rem;
+color:rgba(102,102,102,1);}
+.user{width: 3.75rem;height: 0.5rem;margin-top: 0.06rem;}
+#touxiang{float: left;width: 0.46rem;height: 0.46rem;border-radius: 50%;border: solid 1px gray;margin-left: 0.25rem;overflow: hidden;}
+#xinxi{float: left;margin-left: 0.16rem;}
+#name{font-size: 0.16rem;font-weight: 400;#333333;}
+#level{font-size: 0.12rem;width: 0.3rem;height: 0.17rem;background: #F08080;color: white;text-align: center;line-height: 0.17rem;margin-top: 0.06rem;border-radius: 0.04rem;}
+.user a{display: block;float: right;font-size: 0.2rem;margin-right: 0.12rem;margin-top: 0.1rem;color: #333333;}
+#touxiang img{width: 0.46rem;height: 0.46rem;border-radius: 50%;}
+.guanzhu{width: 3.75rem;height: 1.12rem;border-bottom: solid 0.03rem #f3f3f3;}
+#guanzhu{float: left;margin: 0 0.3rem;text-align: center;margin-top: 0.1rem;}
+#fensi{float: left;margin: 0 0.3rem;text-align: center;margin-top: 0.1rem;}
+#banggong{float: left;margin: 0 0.3rem;text-align: center;margin-top: 0.1rem;}
+.guanzhu p{font-size: 0.16rem;line-height: 0.22rem;color: #666666;}
+.guanzhu .liuyan{font-size: 0.14rem;line-height: 0.17rem;color: #A6A6A6;margin-top: 0.18rem;margin-left: 0.12rem;float: left;}
+
+/* index_lists */
+.index_lists{height: 0.6rem; display: flex;
+	padding: 0.1rem 0;}
+.index_lists li{flex: 1;}
+.index_lists li a{display: flex;flex-direction: column;
+	justify-content: space-around;align-items: center;
+	color: #8A8A8A;height: 100%;}
+.index_lists li i{font-size: 0.27rem;}
+.index_lists li span{font-size: 0.14rem;}
+.daohang{width: 3.75rem;height: 0.86rem;border-bottom:solid 0.03rem #f3f3f3;}
+
+/* xia fen ye */
+.shipu{margin-left: 1.14rem;}
+.zuopin{margin-left: 0.5rem;}
+.fenye{font-size: 0.16rem;margin-top: 0.12rem;line-height: 0.22rem;color: #666666;position: relative;}
+.line{border-bottom: solid 0.04rem #E8876D;color: #333333;font-weight: bold;}
+.con_1{margin-top:0.1rem;width: 3.75rem;height: 2.5rem;position: absolute;top: 3rem;left: 0;}
+.con_1 img{margin-top: 0.55rem;margin-left: 1.35rem;
+	width: 1.2rem;height: 1.6rem;}
+.con_2{margin-top:0.1rem;width: 3.75rem;height: 2.5rem;position: absolute;top: 3rem;left: 0;}
+.con_2 img{margin-top: 0.55rem;margin-left: 1.35rem;
+	width: 1.2rem;height: 1.6rem;}
+
+#content{position: relative;}

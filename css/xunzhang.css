@@ -1,0 +1,17 @@
+html{font-size: 26.666vw;}
+html,body{height: 100%;}
+body{display: flex;flex-direction: column;position: relative;overflow-x: hidden;}
+
+.head{width: 3.75rem;height: 0.54rem;padding-top: 0.1rem;border-bottom: solid 0.1rem #F5F7F9;box-sizing: border-box;}
+.head span{font-size: 0.15rem;color: #333333;margin-left: 0.12rem;}
+.head i{font-style: normal;font-size: 0.16rem;font-weight: 600;line-height: 0.22rem;margin-left: 1.16rem;color: #333333;letter-spacing: 0.02rem;}
+
+.nav1{width: 3.75rem;height: 0.86rem;border-bottom: solid 0.1rem #F5F7F9;display: flex;flex-direction: column;align-content: space-around;}
+.nav1 i{font-style: normal;font-size: 0.16rem;color: #333333;margin-left: 0.12rem;display: block;float: left;}
+.nav1 li{height: 0.42rem;line-height: 0.42rem;}
+
+.nav2{width: 3.75rem;height: 0.43rem;display: flex;flex-direction: column;align-content: space-around;}
+.nav2 i{font-style: normal;font-size: 0.16rem;color: #333333;margin-left: 0.12rem;display: block;float: left;}
+.nav2 li{height: 0.42rem;line-height: 0.42rem;}
+
+.blank img{width: 3.51rem;height: 4.18rem;margin-top: 0.2rem;margin-left: 0.1rem;}

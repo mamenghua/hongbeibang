@@ -1,0 +1,40 @@
+html{font-size: 26.666vw;}
+html,body{height: 100%;}
+body{display: flex;flex-direction: column;position: relative;overflow-x: hidden;}
+i{font-style: normal;}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #999;
+
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #999;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #999;
+
+}   
+
+.head{width: 3.75rem;height: 0.54rem;padding-top: 0.1rem;box-sizing: border-box;}
+.head span{font-size: 0.15rem;color: #E98B71;margin-left: 0.12rem;}
+.head i{font-style: normal;font-weight: 800;color: #333333;font-size: 0.18rem;margin-left: 1.1rem;}
+ 
+ .content{padding: 0 0.12rem;}
+ .content>h3{font-size: 0.16rem;color: #666666;text-align: center;margin-top: 0.1rem;}
+ .content>p{font-size: 0.16rem;color: #333333;font-weight: bold;text-align: center;margin-top: 0.2rem;}
+ 
+ input{border: none;}
+
+ .duanxin{width: 100%;height: 0.5rem;margin-top: 0.1rem;}
+ .duanxin input{width: 2.4rem;height: 0.5rem;border-bottom: solid 0.02rem #f4f1f3;font-size: 0.18rem;line-height: 0.5rem;}
+ .duanxin span{display: inline-block;width: 0.6rem;font-size: 0.14rem;color: #999999;margin-left: 0.2rem;}
+ 
+ 
+ .mima{width: 100%;height: 0.5rem;margin-top: 0.1rem;}
+ .mima input{width: 2.4rem;height: 0.5rem;font-size: 0.18rem;line-height: 0.5rem;}
+ .mima span{font-size: 0.14rem;color:#E98B71;margin-left: 0.2rem;}
+ 
+ .wancheng{width: 2.2rem;height: 0.44rem;background:#E98B71;border: none;border-radius: 0.5rem;font-size: 0.18rem;color: white;margin-top: 0.5rem;margin-left: 0.6rem;}

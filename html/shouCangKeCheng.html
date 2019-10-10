@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>收藏课程</title>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shoucang.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/returnBtn.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				$('li').click(function(){
+					$(this).addClass('line').siblings().removeClass('line');
+					
+					if($(this).hasClass('shi')){
+						$('.shipu').removeClass('yincang');
+						$('.kecheng').addClass('yincang');
+					}
+					if($(this).hasClass('ke')){
+						$('.kecheng').removeClass('yincang');
+						$('.shipu').addClass('yincang');
+					}
+				});
+				
+				
+				$.post("http://47.240.68.134:8889/backinghelper/user/findAllCollectVideos.do",{
+					"token":$.cookie("token")	
+					},function(data){
+						console.log(data);
+						if(data.code == "1"){
+							let str = "";
+							for(var i in data.info){
+								let info = data.info[i];
+								str += `<dl><a href="keTang2.html?videoId=${info.videoId}">
+									<dt><img src="${info.imgHref}" ></dt>
+									<dd>${info.videoName}</dd>
+								</a></dl>`;
+							}
+							$(".kecheng").html(str);
+						}
+					});
+				
+				var $shipu = document.getElementsByClassName("shipu")[0];
+				var str = "";
+				
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/ed88bdd26c3e496c2fb458dc4eb2a2ed/api/shoucang",
+					success:function(data){
+						
+						for(var i in data.shipu){
+							// console.log(data.shipu[i].title);
+							str += `
+							<dl>
+								<dt><img src="${data.shipu[i].tupian}" ></dt>
+								<dd>
+									<h3>${data.shipu[i].title}</h3>
+									<p>${data.shipu[i].con}</p>
+								</dd>
+							</dl>
+							`;
+						}
+						
+						$shipu.innerHTML = str;
+						
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header id="head">
+			<i id="returnBtn" class="iconfont icon-zuo"></i>
+			
+			<div class="searchArea">
+				<i class="iconfont icon-fangdajing"></i>
+				<input type="text" placeholder="搜索食谱/食材" />
+			</div>
+		</header>
+		
+		<section class="content">
+			<div class="nav">
+				<ul>
+					<li class="shi">食谱</li>
+					<li class="line ke">课程</li>
+					<li>食单</li>
+					<li>问答</li>
+					<li>文章</li>
+				</ul>
+			</div>
+			
+			<div class="con">
+				<div class="kecheng">
+					<!-- <dl>
+						<dt><img src="" ></dt>
+						<dd>撒肯定撒的</dd>
+					</dl> -->
+					
+				</div>
+				
+				<div class="shipu yincang">
+					<!-- <dl>
+						<dt><img src="" ></dt>
+						<dd>
+							<h3>ads</h3>
+							<p>sdad</p>
+						</dd>
+					</dl> -->
+					
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

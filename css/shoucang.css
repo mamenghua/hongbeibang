@@ -1,0 +1,38 @@
+html{font-size:26.6666vw;}
+html,body{height: 100%;}
+body{display: flex;flex-direction: column;}
+/* 左浮动右浮动 */
+
+/* head */
+#head{
+	padding: 0.12rem;font-size: 0.20rem;box-sizing: border-box;width: 3.75rem;}
+#head>a i{font-size: 0.2rem;color: #333333;}
+.searchArea{width: 2.68rem;height: 0.26rem;line-height: 0.22rem;
+	background:rgba(240,240,239,1);border-radius:0.16rem;
+	box-sizing: border-box;padding: 0 0.2rem;display: inline-block;margin-left: 0.24rem;}
+.searchArea i{font-size: 0.12rem;vertical-align: middle;
+	color:rgba(153,153,153,1);}
+.searchArea input{vertical-align: middle;width: 90%;line-height: 0.12rem;
+	font-size: 0.1rem;border: 0;background:rgba(240,240,239,1);color: #757575}
+
+.nav ul{width: 3.75rem;height: 0.5rem;display: flex;justify-content: space-around;padding: 0 0.3rem;box-sizing: border-box;}
+.nav ul li{font-size: 0.16rem;color: #333333;height: 0.26rem;}
+.line{border-bottom: solid 0.04rem #E8876D;}
+
+.kecheng{padding: 0.08rem 0.12rem;box-sizing:border-box;position: absolute;}
+.kecheng dl{width: 1.71rem;height: 2.1rem;float: left;}
+.kecheng dl:nth-of-type(even){margin-left: 0.08rem;}
+.kecheng dl dt img{width: 1.7rem;height: 1.45rem;background: palegoldenrod;}
+.kecheng dl dd{font-size: 0.16rem;color: #333333;line-height: 0.24rem;margin-top: 0.04rem;}
+
+.shipu{padding: 0.08rem 0.12rem;box-sizing:border-box;position: absolute;}
+.shipu dl{width: 1.4rem;height: 2.5rem;float: left;}
+.shipu dl:nth-of-type(even){margin-left: 0.7rem;}
+.shipu dl dt img{width: 1.4rem;height: 1.84rem;background: palegoldenrod;}
+.shipu dl dd h3{font-size: 0.16rem;color: #333333;line-height: 0.22rem;margin-top: 0.04rem;font-weight:500;}
+.shipu dl dd p{font-size: 0.12rem;color: #999999;line-height: 0.22rem;font-weight:500;}
+
+.con{position: relative;}
+.yincang{display: none;}
+
+.content{flex: 1;overflow-y: auto;}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/gerenshezhi.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				/*$.ajax({
+					type:"post",
+					url:"http://47.240.68.134:8889/backinghelper/user/updateUser.do",
+					data:{
+						"token":"be3957824e2eb377d46c6a9758d1cd29",
+						"sex":"女"
+					},
+					success:function(data){
+						console.log(data);
+					}
+				});*/
+				$.ajax({
+					type:"post",
+					url:"http://47.240.68.134:8889/backinghelper/user/userInfo.do",
+					data:{
+						"token":$.cookie("token")
+					},
+					success:function(data){
+						console.log(data);
+						if(data.code == "1"){
+							let info = data.info;
+							$("#nickname").text("昵称："+info.nickname);
+							$("#sex").text("性别："+info.sex);
+						}
+					}
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<header class="head">
+			<a href="shezhi.html"><span class="iconfont icon-zuo"></span></a>
+			<i>个人设置</i>
+		</header> 
+		
+		<section class="content">
+			<ul class="nav1">
+				<li><a href="#"><i>头像：</i><div class="touxiang"></div><span class="iconfont icon-you"></span><strong class="genghuan">更换</strong></a></li>
+			</ul>
+			<ul class="nav2">
+				<li><a href="#"><i id="nickname">昵称：</i><div class="touxiang"></div><span class="iconfont icon-you"></span><strong class="genghuan">更换</strong></a></li>
+				<li><a href="#"><i id="sex">性别：</i><div class="touxiang"></div><span class="iconfont icon-you"></span></a></li>
+				<li><a href="#"><i>简介：</i><div class="touxiang"></div><span class="iconfont icon-you"></span></a></li>
+			</ul>
+			<ul class="nav3">
+				<li><a href="#"><i>邮箱：</i><div class="touxiang"></div><span class="iconfont icon-you"></span><strong class="genghuan">修改</strong></a></li>
+				<li><a href="#"><i>填写收货地址：</i><div class="touxiang"></div><span class="iconfont icon-you"></span><strong class="genghuan">修改</strong></a></li>
+			</ul>
+		</section>
+		
+		
+	</body>
+</html>

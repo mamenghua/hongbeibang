@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小白必看</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xiaoBaiBiKan.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				// 返回按钮
+				$returnBtn = $("#returnBtn");
+				// 返回按钮注册点击事件
+				$returnBtn.on("click",function(){
+					history.back();		
+				});
+			});
+		</script>
+	</head>
+	<body>
+
+		<!-- header -->
+		<header id="header">
+			<i id="returnBtn" class="iconfont icon-zuo"></i>
+			
+			<a href="#">
+				<i class="iconfont icon-weixin2"></i>
+			</a>
+			<a href="#">
+				<i class="iconfont icon-more"></i>
+			</a>
+			<a href="#" class="fr">收藏</a>
+		</header>
+		<!-- content -->
+		<section id="content">
+			<div class="xiaobai">
+				<h3 class="title">小白如何学烘焙？</h3>
+				<p>看完上方视频，你将对如何入门烘焙有初步的认识。在烘焙帮中，除了海量的图文食谱，你还可以通过视频课程学烘焙。</p>
+				<p>烘焙帮学堂，是由烘焙帮推出的课程品牌。通过官方自制的教学视频，用最成功的烘焙配方、最细致的步骤讲解、最贴心的导师服务，让你烘焙100%成功！</p>
+				<p>点击链接即可免费体验：<a href="#">蔓越莓饼干</a></p>
+				<p>如果你喜欢这样的学习方式，可以报名新手专栏，可以一次学会：蛋挞、曲奇饼干、戚风蛋糕、芝士蛋糕、吐司，点击链接即可了解：<a href="#">零基础也能100%成功</a></p>
+			</div>
+		</section>
+	</body>
+</html>

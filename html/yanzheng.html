@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>手机验证</title>
+		<script src="../js/gVerify.js"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/yanzheng.css"/>
+	</head>
+	<body>
+		<header class="head">
+			<a href="denglu.html"><span class="iconfont icon-zuo"></span></a>
+		</header>
+		<section class="content">
+			<h4>手机验证</h4>
+			<div class="input">
+				<select name="" id="">
+					<option value="">+86</option>
+				</select>
+				<input type="tel" id="tel" placeholder="请输入手机号" minlength="11" maxlength="11">
+			</div>
+			<div class="input">
+				<input type="text" id="code" placeholder="请输入验证码">
+				<div id="v_container"></div>
+			</div>
+			
+			<a href="#" class="next">下一步</a>
+		</section>
+	</body>
+	
+	
+	<script type="text/javascript">
+		var verifyCode = new GVerify("v_container");
+		
+		$('.next').click(function(){
+			// 得到电话号码
+			let tel = $("#tel").val();
+			// 正则验证手机号
+			let reg = /^\d{6,11}$/;
+			if(!reg.test(tel)){
+				alert("手机号码有误，请重新输入");
+				return;
+			}
+			// 获取到验证码，判断验证码是否一致
+			var res = verifyCode.validate($("#code").val());
+			
+			//res如果为true，说明验证码匹配成功
+			if(res){
+				$.ajax({
+					type:"post",
+					url:"http://47.240.68.134:8889/backinghelper/user/getCode.do",
+					data:{
+						"phone":tel
+					},
+					success:function(data){
+						if(data.code == "1"){
+							// 保存手机号和后台传过来的验证码
+							localStorage.setItem("tel",tel);
+							localStorage.setItem("code",data.info);
+							// 跳转到注册页面
+							document.location.href = "zhuce.html";
+						}
+						
+					}
+				});
+				
+			}else{
+				alert("验证码输入错误");
+			}
+			
+			
+		});
+		
+		
+	</script>
+</html>

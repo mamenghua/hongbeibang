@@ -1,0 +1,160 @@
+<!-- https://www.fastmock.site/mock/ed88bdd26c3e496c2fb458dc4eb2a2ed/api/user -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wo.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
+		<script src="../js/wo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				
+				var user = document.querySelectorAll(".user")[0];
+				var str = "";
+				$.ajax({
+					type:"post",
+					url:"http://47.240.68.134:8889/backinghelper/user/userInfo.do",
+					data:{
+						"token":$.cookie("token")
+					},
+					success:function(data){
+						if(data.code == "1"){
+							let info = data.info;
+							let str = "";
+							let img = "../img/1.png";
+							if(info.headImg != null){
+								img = info.headImg;
+							}
+							str += `
+							<div id="touxiang">
+								<img src = "${img}">
+							</div>
+							<div id="xinxi">
+								<p id="name">${info.nickname}</p>
+								<p id="level">${info.grade}</p>
+							</div>
+							<a href="sheZhi.html"> > </a>
+							`;
+							console.log(info);
+							user.innerHTML = str;
+						}
+						
+					}
+				});
+				
+			});
+		</script>
+	</head>
+	<body> 
+		<!-- header -->
+		<header id="head">
+			<a href="faBu.html">
+				<i class="iconfont icon-add-fill"></i>
+			</a>
+			<div class="searchArea">
+				<i class="iconfont icon-fangdajing"></i>
+				<input type="text" placeholder="搜索食谱/食材" />
+			</div>
+			<a href="sheZhi.html">
+				设置
+			</a>
+		</header>
+		
+		<section id="content">
+			<div class="user">
+				<!-- <div id="touxiang"></div>
+				<div id="xinxi">
+					<p id="name">dsad</p>
+					<p id="level">123</p>
+				</div>
+				<a href="#"> > </a> -->
+			</div>
+			<div class="guanzhu">
+				<div id="guanzhu"><p>10</p><p>关注</p></div>
+				<div id="fensi"><p>155</p><p>粉丝</p></div>
+				<div id="banggong">
+					<a href="woDeBangGong.html">
+						<p>30</p><p>帮贡</p>
+					</a>
+				</div>
+				<p class="liuyan">这个人很懒~什么都没有留下~</p>
+			</div>
+			<div class="daohang">
+				<ul class="index_lists">
+					<li>
+						<a href="shouCangKeCheng.html">
+							<i class="iconfont icon-favorite" style="color: #8A8A8A;"></i>
+							<span>我的收藏</span>
+						</a>
+					</li>
+					<li>
+						<a href="shouCangKeCheng.html">
+							<i class="iconfont icon-icon-" style="color: #8A8A8A;"></i>
+							<span>我的课程</span>
+						</a>
+					</li>
+					<li>
+						<a href="liuLanJiLu.html">
+							<i class="iconfont icon-boshimao" style="color: #8A8A8A;"></i>
+							<span>浏览历史</span>
+						</a>
+					</li>
+					<li>
+						<a href="meiRiQianDao.html">
+							<i class="iconfont icon-qiandao" style="color: #8A8A8A;"></i>
+							<span>签到任务</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<p class="fenye">
+				<span class="shipu line">食谱 0</span>
+				<span class="zuopin">作品 0</span>
+				<!-- 分页结构 -->
+				
+			</p>
+			<div class="con_1"><img src="../img/fenye.png" alt=""></div>
+			<div class="con_2"><img src="../img/fenye.png" alt=""></div>
+			
+			
+		</section>
+		
+		<!-- footer -->
+		<footer id="foot">
+			<ul class="foot_lists">
+				<li>
+					<a href="../index.html">
+						<i class="iconfont icon-shiwu-2"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="shiPinXueTang.html">
+						<i class="iconfont icon-boshimao1"></i>
+						<span>视频学堂</span>
+					</a>
+				</li>
+				<li>
+					<a href="hongBeiQuan.html">
+						<i class="iconfont icon-shiwu-1"></i>
+						<span>烘焙圈</span>
+					</a>
+				</li>
+				<li class="current">
+					<a href="wo.html">
+						<i class="iconfont icon-wo"></i>
+						<span>我</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

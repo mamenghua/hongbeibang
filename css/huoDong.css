@@ -1,0 +1,40 @@
+#header{font-size: 0.2rem;line-height: 0.36rem;
+	padding: 0 0.12rem;}
+#header i{font-size: 0.2rem;margin: 0 0.02rem;}
+#header a{color: #000000;}
+/* content */
+#content{height: 1000px;color: #333333;
+	background: url(../img/huoDong_bg.png) repeat-y center;
+	background-size: 4rem;}
+#content p{text-align: center;}
+#content>p{line-height: 0.24rem;}
+/* banner */
+.huodongBanner{text-align: center;}
+.huodongBanner img{width: 3.6rem;height: 2rem;}
+/* boxArea */
+#content .descArea{font-size: 0.14rem;margin-top: 0.1rem;}
+#content .box{font-size: 0.14rem;margin-top: 0.1rem;}
+#content .grayBox{width: 2.6rem;margin: 0 auto 0.2rem;
+	border: 1px solid #b7c3c1;background: #f1f1f3;
+	padding: 0.08rem 0.36rem;border-radius: 0.02rem;}
+#content .grayBox p{line-height: 0.26rem;color: #303030;}
+
+.hdTit{font-size: 0.16rem;color: #333333;font-weight: bold;
+	text-align: center;line-height: 0.36rem;}
+
+/* 活动2页面 */
+#content .pinkArea{background: #d0a789;
+	padding: 0.2rem 0.3rem 0.45rem;}
+#content .pinkArea ul{padding: 0.2rem;color: #222222;
+	background: #fff;border: 0.05rem solid #f3d4d2;}
+#content .pinkArea li{border-bottom: 1px dashed #000000;
+	padding: 0.12rem 0;}
+#content .pinkArea li:last-child{border-bottom: 0;}
+#content .pinkArea li p{line-height: 0.36rem;}
+#content .pinkArea li span{color: #ed2235;}
+
+/* footer */
+#footer{font-size: 0.16rem;text-align: center;}
+#footer .upload{background: #E98B71;display: inline-block;
+	width: 100%;height: 0.46rem;line-height: 0.46rem;
+	font-size: 0.14rem;color: #ffffff;}

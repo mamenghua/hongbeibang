@@ -1,0 +1,14 @@
+html{font-size: 26.666vw;}
+html,body{height: 100%;}
+body{display: flex;flex-direction: column;position: relative;overflow-x: hidden;}
+
+.head{width: 3.75rem;height: 0.54rem;padding-top: 0.1rem;box-sizing: border-box;}
+.head span{font-size: 0.15rem;color: #333333;margin-left: 0.12rem;}
+
+
+.content img{width: 3.04;height: 2.1rem;margin-top: 0.3rem;margin-left: 0.34rem;}
+.weixin{display: block;width: 2.6rem;height: 0.5rem;border-radius: 0.05rem;background: mediumseagreen;text-align: center;line-height: 0.5rem;margin-top: 0.8rem;margin-left: 0.56rem;font-size: 0.16rem;color: white;letter-spacing: 0.02rem;}
+.qita{font-size: 0.16rem;color: #F7866A;margin-top: 0.5rem;margin-left: 1.4rem;display: block;}
+
+p{margin-top: 1.2rem;margin-left: 1rem;color: darkgray;font-size: 0.12rem;}
+p .tiaokuan{color:#F7866A ;}

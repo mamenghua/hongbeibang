@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的帮贡</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/woDeBangGong.css" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				// 返回按钮
+				$returnBtn = $("#returnBtn");
+				// 返回按钮注册点击事件
+				$returnBtn.on("click",function(){
+					history.back();		
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<p id="returnBtn" class="iconfont icon-zuo"></p>
+				<p>我的帮贡</p>
+				<p><a href="">规则</a></p>
+			</div>
+		</header>
+		<section id="content">
+			<div class="kybg">
+				<h2>25</h2>
+				<p>可使用帮贡</p>
+				<a href="">去兑换</a>
+			</div>
+			<div class="faq">
+				<h2>FAQ:</h2>
+				<P>Q:这里的帮贡为什么和【我】的不同？</P>
+				<P>A:【我】显示的是账户总获得帮贡，这里显示的是账户当前剩余可使用的帮贡哦。</P>
+				<P>Q:相差的帮贡去哪啦？</P>
+				<P>A:打赏，答谢，删除食谱，删除作品。兑换，购买签到等使用到帮贡的行为均会减少可使用帮贡。</P>
+			</div>
+			<div class="mingxi">
+				<div class="mingxiT">
+					<p class="dianji">帮贡明细<span class="current"></span></p>
+					<p>兑换明细<span></span></p>
+				</div>
+				<div class="mingxiB">
+					<div class="mingxiB-l">
+						<h2>首次发表评论柔软吐司，百分百出膜...</h2>
+						<p>2019/7/25</p>
+					</div>
+					<div class="mingxiB-r">
+						<i>+50</i>
+					</div>
+					<div class="mingxiB-l">
+						<h2>购买了1次抽奖机会</h2>
+						<p>2019/7/25</p>
+					</div>
+					<div class="mingxiB-r">
+						<i>-15</i>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+	</body>
+</html>
