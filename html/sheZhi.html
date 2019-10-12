@@ -7,7 +7,20 @@
 		<link rel="stylesheet" type="text/css" href="../css/shezhi.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/niuReset.css"/>
 		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433675_3g5anmdp8od.css"/>
-		
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#tuiChuBtn").on("click",function(){
+					$.cookie("token","0",{
+						path:"/",
+						expires:-1
+					});
+					location.href="denglu.html";
+				});
+				
+			});
+		</script>
 	</head>
 	<body>
 		<header class="head">
@@ -35,7 +48,7 @@
 			</ul>
 			<!-- 退出 -->
 			<div class="tuichu">
-				<a href="denglu.html">退出登录</a>
+				<a href="javascript:void(0);" id="tuiChuBtn">退出登录</a>
 				<p>版本 v4.7.2.19080616</p>
 			</div>
 		</section>
